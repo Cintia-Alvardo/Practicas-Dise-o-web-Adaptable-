@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 2</title>
+</head>
+<style>
+    .contenedor{
+        /*Permite distribuir el contenido*/
+        display:grid;
+
+        /*repeat nos sirve para repetir en este caso las columnas*/
+        grid-template-columns:repeat(3,1fr);
+
+        /*Espacio entre las filas*/
+        grid-gap:20px;
+    }
+
+    .item{
+        /*Borde que llevara nuestro div*/
+        border:1px solid rgb(7, 122, 124);
+
+        /*Cantidad de espacio entre el borde y el contenido*/
+        padding:10px;
+
+        /*Color del relleno del div*/
+        background-color: rgb(98, 188, 192);
+    }
+
+    .contenedor_anidado{
+        /*Permite distribuir el contenido*/
+        display: grid;
+
+        /*Este es para indicar la cantidad de columnas*/
+        grid-template-columns:repeat(2,1fr);
+
+        /*Espacio entre las grid*/
+        grid-gap: 10px;;
+    }
+</style>
+<body>
+    <div class="contenedor">
+        <div class="item">
+            <h2>Titulo</h2>
+            <div class="contenedor_anidado">
+                <div>cotenido_1</div>
+                <div>cotenido_2</div>
+            </div>
+        </div>
+        
+        <div class="item">
+            <h2>Titulo</h2>
+            <div class="contenedor_anidado">
+                <div>cotenido_1</div>
+                <div>cotenido_2</div>
+            </div>
+        </div>
+
+        <div class="item">
+            <h2>Titulo</h2>
+            <div class="contenedor_anidado">
+                <div>cotenido_1</div>
+                <div>cotenido_2</div>
+            </div>
+        </div>
+
+        <div class="item">
+            <h2>Titulo</h2>
+            <div class="contenedor_anidado">
+                <div>cotenido_1</div>
+                <div>cotenido_2</div>
+            </div>
+        </div>
+
+        <div class="item">
+            <h2>Titulo</h2>
+            <div class="contenedor_anidado">
+                <div>cotenido_1</div>
+                <div>cotenido_2</div>
+            </div>
+        </div>
+
+        <div class="item">
+            <h2>Titulo</h2>
+            <div class="contenedor_anidado">
+                <div>cotenido_1</div>
+                <div>cotenido_2</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

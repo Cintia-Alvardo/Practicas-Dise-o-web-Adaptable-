@@ -1,0 +1,63 @@
+.conteiner{
+    /*Permite distribuir el contenido*/
+    display:grid;
+
+    /*repeat nos sirve para repetir en este caso las columnas*/
+    grid-template-columns:1fr;
+}
+
+
+.item{
+     /*Borde que llevara nuestro div*/
+     border:rgb(88, 88, 88) solid 3px;
+
+     /*Cantidad de espacio entre el borde y el contenido*/
+     padding:10px;
+
+     /*Color del relleno del div*/
+     background-color:gainsboro;
+    
+    /*Ancho del div*/
+    width:600px;
+
+    /*Alto del div*/
+    height:300px;
+
+    /*Esto hace que el texto que ingresemos se alinee al centro*/
+    text-align: center;
+}
+
+.item2{
+    /*Permite distribuir el contenido*/
+    display:grid;
+
+    /*repeat nos sirve para repetir en este caso las columnas*/
+    grid-template-columns: 1fr 1fr;
+}
+
+img{
+    /*Ancho de la imagen*/
+    width:100px;
+
+    /*Alto de la imagen*/
+    height:100px;
+}
+
+button{
+    /*Color del button (Ver detalles)*/
+    background-color: rgb(180, 180, 249);
+
+    /*Ancho de button*/
+    width:100px;
+
+    /*Alto de buttom*/
+    height:30px;
+
+    /*Esto hace que el borde del button sea circular según los px que le demos*/
+    border-radius:6px;
+}
+
+button a{
+    /*Le da color a la letra al contenido que esta en a dentro de button*/
+color: rgb(66, 64, 64);
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo</title>
+</head>
+<style>
+    .contenedor{
+        /*Permite distribuir el contenido*/
+        display:grid;
+
+        /*El fr se utiliza para nosotros poder crear las columnas*/
+        /*Dos columnas con tamaño flecible*/
+        grid-template-columns: 1fr 2fr;
+
+        /*Tamaño fijo, contenido automatico*/
+        grid-template-rows: 100px auto 200px;
+
+        /*Espacio entre las filas*/
+        grid-gap:10px;
+    }
+
+    .item{
+        /*Altura del div*/
+        height:80px;
+
+        /*Ancho del div*/
+        width:500px;
+
+        /*Color del relleno del div*/
+        background-color: rgb(180, 107, 220);
+    }
+</style>
+<body>
+   <div class="contenedor">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+   </div>
+</body>
+</html>
