@@ -1,0 +1,103 @@
+/*------------------------EJERCICIO UNO-------------------------*/
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-item {
+    padding: 4;
+}
+
+.nav-link {
+    background-color: rgb(123, 198, 199, 0.8);
+    width: 280px;
+    margin: 4px;
+    text-align: center; /*Centra el texto en los cuadros*/
+    line-height: 20px;
+    font-family: sans-serif;
+    color: rgb(7, 13, 14, 0.8);
+    padding: 20px 20px; /*Añade padding para los cuadrs de navegación*/
+    border: 1px solid rgb(19,125, 139); /*Agrega un borde aqua en los cuadros*/
+    transition: background-color rgb(123, 198, 199, 0.8); /*Agrega un transición de color de fondo suave*/
+}
+
+.nav-link:hover {
+    background-color: white;/*Cambia el color de fondo al pasar el pulsor sobre el cuadro*/
+    color: rgb(123, 198, 199, 0.8);
+}
+
+/*------------------------EJERCICIO DOS-------------------------*/
+
+/*Resetear estilos por defecto de la lista*/
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*Estilos de la lista de navegación*/
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: left; /*Alineación vertical izquierda*/
+    width: 250px; /*Ancho de la barra de navegación*/
+    height: 100vh; /*Altura de la ventana*/
+}
+
+/*Estilos de la lista de navegacion*/
+.navbar-nav{
+    width: 100%; /*Ancho del 100% para ocupar todo el espacio vertical*/
+    text-align: left; /*Alineación de texto a la izquierda*/
+}
+
+/*Estilos de la lista de navegación*/
+.nav-link{
+    background-color: rgb(123, 198, 199, 0.8);
+    width: 100%; /*Ancho de 100% para ocupar todo el espacio disponible*/
+    margin: 6px 0; /*Espacio entre las tarjetas*/
+    text-align: center; /*Alineación de texto al centro*/
+    line-height: 50px; /*Altura de linea para centra verticalmente el texto*/
+    font-size: 20px; /*Tamaño de fuente*/
+    color: #000;
+    font-family: sans-serif;
+}
+
+/*------------------------EJERCICIO TRES-------------------------*/
+/*Estilo personalizado para las tarjetas*/
+.custom-card {
+    margin-top: 30px; /*Agrega espacio en la parte superior de las tarjetas*/
+    flex: 0;
+    width: 100px; /*Ancho de las tarjetas*/
+}
+
+/*Estilo para el título de la tarjeta*/
+.card-title {
+    background-color: #332703;
+    color: #fefcfe;
+    margin: 4px;
+    height: 40px; /*Altura del título reducida*/
+    text-align: center;
+    padding: 10px 10px; /*Reduxco el padding para hacerlo mas compacto*/
+}
+
+/*Estilo para el cuerpo de la tarjeta*/
+.card-body {
+    padding: 20px;
+}
+
+/*Estilo para el pie de la tarjeta*/
+.card-footer {
+    height: 40px; /*Altura del pie reducida*/
+    text-align: center;
+    color: #065c0e;
+    padding: 6px; /*Reduzco el padding para hacerlo mas compacto*/
+}
+
+/*Estilo para la imagen dentro de la tarjeta*/
+.card-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+}
